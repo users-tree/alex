@@ -1,0 +1,38 @@
+#!/bin/sh
+
+
+function dec_gpg {
+  if [[ -x /usr/local/bin/gpg || -x /usr/bin/gpg ]]; then
+    gpg -d --batch --cipher-algo AES256 --passphrase $PASSWD $fileName
+  else
+    return 1
+  fi
+}
+
+function dec_openssl {
+  if [[ -x /usr/local/bin/openssl || -x /usr/bin/openssl ]]; then
+    openssl aes-256-cbc -d -in $fileName -out $fileName.out -pass pass:$PASSWD
+  else
+    return 1
+  fi
+}
+
+fileName=$1
+if [ ! $fileName ]; then
+	echo "usage : $0 filename"
+  exit 1
+else
+	echo "Please enter your passphrase follows by <return>"
+	read -s PASSWD
+    echo "encrypt $fileName using openssl"
+  dec_openssl
+  result=$?
+  if [ $result -eq "1" ]; then
+    echo "decript $fileName using gpg"
+  dec_gpg
+  result=$?
+  if [ $result -eq "1" ]; then
+    echo "Did not find any decryption tool"
+  fi
+fi
+fi

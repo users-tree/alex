@@ -1,0 +1,38 @@
+#!/bin/sh
+
+
+function enc_gpg {
+  if [[ -x /usr/local/bin/gpg || -x /usr/bin/gpg ]]; then
+    gpg -c --batch --cipher-algo AES256 --passphrase $PASSWD -o $fileName.gpg $fileName
+  else
+    return 1
+  fi
+}
+
+function enc_openssl {
+  if [[ -x /usr/local/bin/openssl || -x /usr/bin/openssl ]]; then
+    openssl enc -aes-256-cbc -e -in $fileName -out $fileName.openssl -pass pass:$PASSWD
+  else
+    return 1
+  fi
+}
+
+fileName=$1
+if [ ! $fileName ]; then
+	echo "usage : $0 filename"
+  exit 1
+else
+	echo "Please enter your passphrase follows by <return>"
+	read -s PASSWD
+    echo "encrypt $fileName using openssl"
+  enc_openssl
+  result=$?
+  if [ $result -eq "1" ]; then
+    echo "encript $fileName using gpg"
+  enc_gpg
+  result=$?
+  if [ $result -eq "1" ]; then
+    echo "Did not find any encryption tool"
+  fi
+fi
+fi

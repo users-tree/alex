@@ -1,0 +1,1 @@
+ssh -L 8080:10.100.100.2:80 alex@bastion01.pointlook.com

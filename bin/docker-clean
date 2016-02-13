@@ -1,0 +1,14 @@
+IMAGES=`docker ps -a | grep -v CONTAINER | awk '{ print $1 }'`
+for image in $IMAGES; do
+  echo "stopping and deleting container $image"
+  ( docker stop $image && docker rm $image ) &
+done
+
+
+IMAGES=`docker images | grep '<none>' | awk '{ print $3 }'`
+for image in $IMAGES; do
+  echo "deleting image $image"
+  ( docker rmi $image ) &
+done
+
+echo "cleaning completed."

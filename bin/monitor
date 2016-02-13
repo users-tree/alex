@@ -1,0 +1,19 @@
+# There are 288 - 5 minute (300 second) intervals in a day
+LIMIT=288
+# sleep for 5 miniutes (300 seconds)
+SLEEP_TIME=300
+while true
+	do
+		i=0
+		echo > ps_mon.out
+		echo > vmstat_mon.out
+		while [ $i -le "$LIMIT" ];
+			do
+				date >> ps_mon.out;
+				ps -eLf >> ps_mon.out;
+				date >> vmstat_mon.out;
+				vmstat 5 12 >> vmstat_mon.out & 
+				i=`expr $i + 1`;
+				sleep $SLEEP_TIME;
+		done
+done

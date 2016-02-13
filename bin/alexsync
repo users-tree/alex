@@ -1,0 +1,5 @@
+echo "Sync /Users/alex/ to /Volumes/OSX-dev"
+
+sudo rsync -aW /Users/alex/ /Volumes/OSX-dev/
+
+echo "Done..."

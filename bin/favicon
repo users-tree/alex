@@ -1,0 +1,5 @@
+INFILE=favicon.png
+
+[ ! -z "$1" ] && INFILE=$1
+
+convert -background transparent -resize x16 -gravity center -crop 16x16+0+0 $INFILE -flatten -colors 256 $INFILE-favicon.ico 

@@ -1,0 +1,7 @@
+FILE=test
+[ $1 ] && FILE=$1
+
+#ffmpeg -codec:a libvo_aacenc -ar 44100 -ac 1 -codec:v libx264 -profile:v baseline -level 13 -b:v 2000k $FILE-dash.mp4 -i $FILE.mp4
+ffmpeg -y -i $FILE.mov -c:a libfdk_aac -ac 2 -ab 128k -c:v libx264 -x264opts 'keyint=24:min-keyint=24:no-scenecut' -b:v 1500k -maxrate 1500k -bufsize 1000k -vf "scale=-1:720" $FILE-dash.mp4
+
+mp4box -dash 10000 -dash-profile live -segment-name dash-seg $FILE-dash.mp4

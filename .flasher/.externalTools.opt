@@ -1,0 +1,4 @@
+[Tools]
+adb=/Applications/Phone Flash Tool Lite.app/Contents/MacOS/adb
+fastboot=/Applications/Phone Flash Tool Lite.app/Contents/MacOS/fastboot
+dfuDownloader=/Applications/Phone Flash Tool Lite.app/Contents/MacOS/dfu-util

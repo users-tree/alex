@@ -1,0 +1,25 @@
+#!/bin/bash
+FILE=~/login.txt
+CONNECT=sshexpect
+SERVERNAME=$1
+MyServer=""
+MyUser=""
+MyPassword=""
+exec 3<&0
+exec 0<$FILE
+while read line
+do
+        MyServer=$(echo $line | cut -d'|' -f1)
+        MyUser=$(echo $line | cut -d'|' -f2)
+        MyPassword=$(echo $line | cut -d'|' -f3)
+	echo "MyServer= $MyServer"
+	echo "MyUser= $MyUser"
+	echo "MyPassword= $MyPassword"
+        if [ "$SERVERNAME" == "$MyServer" ];
+        then
+           echo "Running ssh $MyUser@$MyServer..."
+          $CONNECT $MyPassword $MyServer $MyUser
+        fi
+done
+exec 0<&3
+echo "$SERVERNAME not found in login.txt file"

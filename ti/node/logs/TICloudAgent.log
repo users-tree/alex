@@ -1,0 +1,73 @@
+2015-11-21T09:00:29.593Z - info: Staring directory : /Volumes/ALEX2006HW/dev/hack/sigfox/pointlook/TICloudAgent/src source=unknown
+2015-11-21T09:00:29.595Z - info: Starting Agent! source=unknown
+2015-11-21T09:00:29.603Z - info: Module( Agent )->Web socket server started! source=unknown
+2015-11-21T09:00:29.604Z - info: Discovered Module : DS source=unknown
+2015-11-21T09:00:29.606Z - info: Discovered Module : File source=unknown
+2015-11-21T09:00:29.608Z - info: Discovered Module : Flash source=unknown
+2015-11-21T09:00:29.633Z - info: Discovered Module : Serial source=unknown
+2015-11-21T09:00:29.636Z - info: Discovered Module : TargetSupport source=unknown
+2015-11-21T09:00:29.655Z - info: Module( Agent )->Exec Command : addConfigProperty:2 source=unknown
+2015-11-21T09:00:29.655Z - info: Setting property cloudAgentInstallerServerURL : http://dev.ti.com/ticloudagentinstaller source=unknown
+2015-11-21T09:00:29.655Z - info: Module( Agent )->Ret Command ( response) : addConfigProperty : 2 source=unknown
+2015-11-21T09:00:30.870Z - info: Module( Agent )->Exec Command : createSubModule:3 source=unknown
+2015-11-21T09:00:30.870Z - info: Module( Agent )->Creating Sub Module : File source=unknown
+2015-11-21T09:00:30.871Z - info: Module( File )->Web socket server started! source=unknown
+2015-11-21T09:00:30.871Z - info: Module( Agent )->Ret Command ( response) : createSubModule : 3 source=unknown
+2015-11-21T09:00:30.878Z - info: Module( File )->Exec Command : listCommands:1 source=unknown
+2015-11-21T09:00:30.879Z - info: Module( File )->Ret Command ( response) : listCommands : 1 source=unknown
+2015-11-21T09:00:31.010Z - info: Module( File )->Exec Command : write:2 source=unknown
+2015-11-21T09:00:31.011Z - info: Module( File )->Ret Command ( response) : write : 2 source=unknown
+2015-11-21T09:00:31.013Z - info: Module( Agent )->Exec Command : createSubModule:4 source=unknown
+2015-11-21T09:00:31.013Z - info: Module( Agent )->Creating Sub Module : TargetSupport source=unknown
+2015-11-21T09:00:31.153Z - info: Overridden Proxy =  source=unknown
+2015-11-21T09:00:31.154Z - info: Creating db dir : /Users/z/.ti/TICloudAgent/db source=unknown
+2015-11-21T09:00:31.155Z - info: Creating loaders dir : /Users/z/.ti/TICloudAgent/loaders source=unknown
+2015-11-21T09:00:31.155Z - info: Could not open installed.json : Error: ENOENT, no such file or directory '/Users/z/.ti/TICloudAgent/db/installed.json' source=unknown
+2015-11-21T09:00:31.155Z - info: Could not open targets.json : Error: ENOENT, no such file or directory '/Users/z/.ti/TICloudAgent/db/targets.json' source=unknown
+2015-11-21T09:00:31.159Z - info: Module( TargetSupport )->Web socket server started! source=unknown
+2015-11-21T09:00:31.160Z - info: Module( Agent )->Ret Command ( response) : createSubModule : 4 source=unknown
+2015-11-21T09:00:31.163Z - info: Module( TargetSupport )->Exec Command : listCommands:1 source=unknown
+2015-11-21T09:00:31.164Z - info: Module( TargetSupport )->Ret Command ( response) : listCommands : 1 source=unknown
+2015-11-21T09:00:31.165Z - info: Module( TargetSupport )->Exec Command : add:2 source=unknown
+2015-11-21T09:00:31.166Z - info: Getting Install Info: http://dev.ti.com/ticloudagentinstaller/ticloudagentinstaller/getInstallInfo?os=osx&deviceID=MSP430F5529&connectionID=TIMSP430-USB source=unknown
+2015-11-21T09:00:31.167Z - info: Looking up proxy settings for url http://dev.ti.com/ticloudagentinstaller source=unknown
+2015-11-21T09:00:31.234Z - info: installer.js using proxy:  source=unknown
+2015-11-21T09:00:31.848Z - info: Additional packages need to be installed to support /var/folders/jq/tc_jsdmx6c3052kzmtlr6y500000gp/T/ti_cloud_storage/MSP430F5529.ccxml. Starting Install Process.
+ source=unknown
+2015-11-21T09:00:31.848Z - info: Installing Components: [{"DSLite":{"type":"files","path":"loaders","name":"DSLite"},"MSP430":{"type":"files","path":"loaders","name":"MSP430"}}] source=unknown
+2015-11-21T09:00:31.849Z - info: Installing package : DSLite
+ source=unknown
+2015-11-21T09:00:31.849Z - info: Looking up proxy settings for url http://dev.ti.com/ticloudagentinstaller source=unknown
+2015-11-21T09:00:31.910Z - info: installer.js using proxy:  source=unknown
+2015-11-21T09:00:31.911Z - info: Get: http://dev.ti.com/ticloudagentinstaller/ticloudagentinstaller/getComponent?os=osx&component=DSLite source=unknown
+2015-11-21T09:00:32.023Z - info: Response: 200 source=unknown
+2015-11-21T09:00:32.023Z - info: Saving to temporary location: /var/folders/jq/tc_jsdmx6c3052kzmtlr6y500000gp/T/ticloudagent_artifacts/DSLite.7z source=unknown
+2015-11-21T09:00:36.559Z - info: Added to Installed Components DB:DSLite source=unknown
+2015-11-21T09:00:36.559Z - info: Installed package : DSLite
+ source=unknown
+2015-11-21T09:00:36.560Z - info: Installing package : MSP430
+ source=unknown
+2015-11-21T09:00:36.560Z - info: Looking up proxy settings for url http://dev.ti.com/ticloudagentinstaller source=unknown
+2015-11-21T09:00:36.625Z - info: installer.js using proxy:  source=unknown
+2015-11-21T09:00:36.625Z - info: Get: http://dev.ti.com/ticloudagentinstaller/ticloudagentinstaller/getComponent?os=osx&component=MSP430 source=unknown
+2015-11-21T09:00:36.731Z - info: Response: 200 source=unknown
+2015-11-21T09:00:36.731Z - info: Saving to temporary location: /var/folders/jq/tc_jsdmx6c3052kzmtlr6y500000gp/T/ticloudagent_artifacts/MSP430.7z source=unknown
+2015-11-21T09:00:37.434Z - info: Added to Installed Components DB:MSP430 source=unknown
+2015-11-21T09:00:37.434Z - info: Installed package : MSP430
+ source=unknown
+2015-11-21T09:00:37.435Z - info: Added to Supported Target DB:MSP430F5529_TIMSP430-USB source=unknown
+2015-11-21T09:00:37.435Z - info: Module( TargetSupport )->Ret Command ( response) : add : 2 source=unknown
+2015-11-21T09:00:37.442Z - info: Module( Agent )->Exec Command : createSubModule:5 source=unknown
+2015-11-21T09:00:37.442Z - info: Module( Agent )->Creating Sub Module : DS source=unknown
+2015-11-21T09:00:37.442Z - info: Starting DS!!!!! source=unknown
+2015-11-21T09:00:37.442Z - info: spawnDS : execFile = ./DSLite args =  cwd = /Users/z/.ti/TICloudAgent/loaders/DSLite/DebugServer/bin source=unknown
+2015-11-21T09:00:37.464Z - info: DS Lite : { "port" : 61988 }
+ source=unknown
+2015-11-21T09:00:37.464Z - info: Started DS Lite : { "port" : 61988 }
+ source=unknown
+2015-11-21T09:00:37.464Z - info: Module( Agent )->Ret Command ( response) : createSubModule : 5 source=unknown
+2015-11-21T09:01:02.826Z - info: Module( File )->Exec Command : write:3 source=unknown
+2015-11-21T09:01:02.840Z - info: Module( File )->Ret Command ( response) : write : 3 source=unknown
+2015-11-21T09:10:55.578Z - info: DSLite process : exit event source=unknown
+2015-11-21T09:10:55.578Z - info: DSLite process : close event source=unknown
+2015-11-21T09:10:55.636Z - info: Exiting agent process! source=unknown

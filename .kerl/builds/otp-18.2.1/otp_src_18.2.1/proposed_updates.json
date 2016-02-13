@@ -1,0 +1,34 @@
+{
+    "proposed_updates_branch": "opu",
+    "tip_sha": "21d6192389a04024f7a41ced9d0911a9cce6f4e8",
+    "base_sha": "82a835d94be7ee5e98d101a29999fedaf6cd75fe",
+    "build_tag": "/build/opu/2015-12-17_21.10",
+    "topic_branches": [
+        {
+            "sha": "e616e04d55b28bff5f0660eb8e3a32fffe398a13",
+            "branch": "jj1bdx/jj1bdx-18.2-freebsd-hipe-fix-2",
+            "ticket": "",
+            "commits": [
+                {
+                    "sha": "e616e04d55b28bff5f0660eb8e3a32fffe398a13",
+                    "author": "kenji.rikitake@acm.org",
+                    "committer": "kenji.rikitake@acm.org",
+                    "subject": "hipe_x86_signal.c: add FreeBSD sigaction code"
+                }
+            ]
+        },
+        {
+            "sha": "f77436f337d83a9751dc84d53791500c7f99c92e",
+            "branch": "egil/fix-windows-paths/OTP-13202",
+            "ticket": "OTP-13202",
+            "commits": [
+                {
+                    "sha": "f77436f337d83a9751dc84d53791500c7f99c92e",
+                    "author": "egil@erlang.org",
+                    "committer": "egil@erlang.org",
+                    "subject": "Revert \"Fix erroneous splitting of emulator path\""
+                }
+            ]
+        }
+    ]
+}

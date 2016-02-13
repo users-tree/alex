@@ -1,0 +1,46 @@
+[Error: Module version mismatch. Expected 47, got 44.]
+js-bson: Failed to load c++ bson extension, using pure JS version
+2016-01-18T05:05:03.317Z|GET|/api/v1/logout|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:05:03.319Z|POST|/api/v1/login|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:05:03.327Z|POST|/api/v1/users|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:05:03.328Z|POST|/api/v1/users/:id|{
+  "isLoginRequired": true,
+  "actions": null
+}
+2016-01-18T05:05:03.329Z|GET|/api/v1/users|{
+  "isLoginRequired": true,
+  "actions": [
+    "me"
+  ]
+}
+2016-01-18T05:05:03.331Z|POST|/api/v1/users/:id/foos|{
+  "isLoginRequired": true,
+  "actions": null
+}
+2016-01-18T05:05:03.332Z|GET|/api/v1/foos/:id|{
+  "isLoginRequired": true,
+  "actions": null
+}
+2016-01-18T05:05:03.332Z|GET|/api/v1/users/:id/foos|{
+  "isLoginRequired": true,
+  "actions": null
+}
+2016-01-18T05:05:03.334Z|POST|/api/v1/users/:id/bazs|{
+  "isLoginRequired": true,
+  "actions": null
+}
+2016-01-18T05:05:03.335Z|GET|/api/v1/dev/clearData|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:05:03.337Z|RESTBERRY|5115
+error: Forever detected script was killed by signal: SIGKILL

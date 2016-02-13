@@ -1,0 +1,14 @@
+IN=video.mov
+[ "$1" ] && IN=$1
+
+ffmpeg -y \
+ -i $IN \
+ -codec copy \
+ -bsf:v h264_mp4toannexb \
+ -map 0 \
+ -f segment \
+ -segment_time 10 \
+ -segment_format mpegts \
+ -segment_list "prog_index.m3u8" \
+ -segment_list_type m3u8 \
+ "fileSequence%d.ts"

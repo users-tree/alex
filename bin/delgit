@@ -1,0 +1,5 @@
+GITS=$(find . -name .git)
+for gits in $GITS; do
+  echo $gits
+  rm -rf $gits
+done

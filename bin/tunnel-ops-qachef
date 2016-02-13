@@ -1,0 +1,22 @@
+#tunnel host2 through host1 as relay
+#1.
+#Tunnel from localhost to host1:
+#ssh -L 9999:host2:1234 -N host1
+#the connection from host1 to host2 will not be secured.
+#2.
+#Tunnel from localhost to host1 and from host1 to host2:
+#ssh -L 9999:localhost:9999 host1 ssh -L 9999:localhost:1234 -N host2
+#This will open a tunnel from localhost to host1 and another tunnel from host1 to host2. 
+#However the port 9999 to host2:1234 can be used by anyone on host1. This may or may not be a problem.
+#3.
+#Tunnel from localhost to host1 and from localhost to host2:
+#ssh -L 9998:host2:22 -N host1
+#ssh -L 9999:localhost:1234 -N -p 9998 localhost
+#This will open a tunnel from localhost to host1 through which the SSH service on host2 can be used. 
+#Then a second tunnel is opened from localhost to host2 through the first tunnel.
+#
+#We go with option 2
+#
+#ssh -L 9999:localhost:9999 alex@54.88.118.154 ssh -L 9999:localhost:22 -N alex@10.254.3.35
+#!/bin/bash
+ssh -f -L 9999:10.254.3.35:22 alex@54.88.118.154 "sleep 10" && ssh -p 9999 alex@localhost

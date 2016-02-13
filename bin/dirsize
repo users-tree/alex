@@ -1,0 +1,5 @@
+FILES=
+[ ! -z "$1" ] && FILES="$1"
+
+echo "Total size : $FILES "
+ls -lrt $FILES | awk '{ total += $5 }; END { print total }'

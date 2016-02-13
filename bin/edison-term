@@ -1,0 +1,7 @@
+PORT='/dev/tty.usbserial-A502F07V'
+#PORT='/dev/tty.usbmodem1a123'
+#PORT='/dev/ttys000'
+
+SPEED=115200
+
+ screen -a -U -t edison -S edison $PORT $SPEED,cs8

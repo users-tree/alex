@@ -1,0 +1,1 @@
+ssh -L 7001:10.100.100.2:7001 admin@bluemix01.pointlook.com

@@ -1,0 +1,1 @@
+enscript --header='$n %W Page $% of $=' -G2rE -U2 $1

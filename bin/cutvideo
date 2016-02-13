@@ -1,0 +1,18 @@
+FILE=test
+[ $1 ] && FILE=$1
+
+#cut : forward 10sec, readin file, skip 1sec, cut next 4sec, output to file
+ffmpeg -ss 00:00:10 -i $FILE.mov -ss 00:00:01 -t 00:00:04 -c copy $FILE-cut.mov
+
+#png
+ffmpeg -ss 4 -i $FILE-cut.mov -s:v 1280x720 -frames:v 1 -an $FILE-cut.png
+
+#webm
+#ffmpeg -i $FILE-cut.mov -c:v libvpx -crf 10 -b:v 1M -c:a libvorbis $FILE.webm
+#
+ffmpeg -i $FILE-cut.mov -c:v libvpx -pass 1 -an -f rawvideo -y /dev/null  # Generates ffmpeg2pass-0.log
+ffmpeg -i $FILE-cut.mov -c:v libvpx -pass 2 -f webm -b:v 400K -crf 10 -an -y $FILE-cut.webm
+
+
+# mp4
+ffmpeg -i $FILE-cut.mov -acodec aac -strict experimental -ac 2 -ab 128k -vcodec libx264 -preset slow -f mp4 -crf 22 -s 640x360 $FILE-cut.mp4

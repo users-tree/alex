@@ -1,0 +1,22 @@
+NODESERVER=$(which http-server)
+TWISTDSERVER=$(which twistd)
+PYTHONSERVER=$(which python)
+
+PORT=8000
+
+if [ $1 ];then PORT=$1; fi
+
+if [ $NODESERVER ]; then
+  echo "$NODESERVER started on localhost:$PORT"
+  $NODESERVER -p $PORT
+else
+  if [ $TWISTDSERVER ]; then
+    echo "$TWISTDSERVER started on localhost:$PORT"
+    $TWISTDSERVER -no web --path=. -p $PORT
+  else
+    if [ $PYTHONSERVER ]; then
+  echo "$PYTHONSERVER started on localhost:$PORT"
+      $PYTHONSERVER -m http.server $PORT
+    fi
+  fi
+fi

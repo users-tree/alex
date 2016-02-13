@@ -1,0 +1,3 @@
+{ [Error: Cannot find module '../build/Release/bson'] code: 'MODULE_NOT_FOUND' }
+js-bson: Failed to load c++ bson extension, using pure JS version
+Tue, 05 Jan 2016 07:43:49 GMT express deprecated res.sendfile: Use res.sendFile instead at Users/z/work/pointlook/iot.pointlook.com/server.js:63:7

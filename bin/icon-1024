@@ -1,0 +1,4 @@
+FILE=test
+[ $1 ] && FILE=$1
+
+ffmpeg -i $FILE.jpg -vf scale=1024:1024 $FILE-1024x1024.png

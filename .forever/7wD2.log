@@ -1,0 +1,127 @@
+[Error: Module version mismatch. Expected 47, got 44.]
+js-bson: Failed to load c++ bson extension, using pure JS version
+2016-01-18T05:03:25.563Z|GET|/api/v1/logout|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:03:25.566Z|POST|/api/v1/login|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:03:25.573Z|POST|/api/v1/users|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:03:25.574Z|POST|/api/v1/users/:id|{
+  "isLoginRequired": true,
+  "actions": null
+}
+2016-01-18T05:03:25.575Z|GET|/api/v1/users|{
+  "isLoginRequired": true,
+  "actions": [
+    "me"
+  ]
+}
+2016-01-18T05:03:25.577Z|POST|/api/v1/users/:id/foos|{
+  "isLoginRequired": true,
+  "actions": null
+}
+2016-01-18T05:03:25.577Z|GET|/api/v1/foos/:id|{
+  "isLoginRequired": true,
+  "actions": null
+}
+2016-01-18T05:03:25.578Z|GET|/api/v1/users/:id/foos|{
+  "isLoginRequired": true,
+  "actions": null
+}
+2016-01-18T05:03:25.580Z|POST|/api/v1/users/:id/bazs|{
+  "isLoginRequired": true,
+  "actions": null
+}
+2016-01-18T05:03:25.580Z|GET|/api/v1/dev/clearData|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:03:25.582Z|RESTBERRY|5115
+events.js:142
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: failed to connect to [localhost:27017]
+    at null.<anonymous> (/Users/z/work/thingtosell/eval/restberry/test/passport-local-express-mongoose/node_modules/mongodb/lib/mongodb/connection/server.js:556:25)
+    at emitThree (events.js:98:13)
+    at emit (events.js:176:7)
+    at null.<anonymous> (/Users/z/work/thingtosell/eval/restberry/test/passport-local-express-mongoose/node_modules/mongodb/lib/mongodb/connection/connection_pool.js:156:15)
+    at emitTwo (events.js:88:13)
+    at emit (events.js:173:7)
+    at Socket.<anonymous> (/Users/z/work/thingtosell/eval/restberry/test/passport-local-express-mongoose/node_modules/mongodb/lib/mongodb/connection/connection.js:534:10)
+    at emitOne (events.js:78:13)
+    at Socket.emit (events.js:170:7)
+    at emitErrorNT (net.js:1257:8)
+    at nextTickCallbackWith2Args (node.js:455:9)
+    at process._tickCallback (node.js:369:17)
+error: Forever detected script exited with code: 1
+error: Script restart attempt #1
+[Error: Module version mismatch. Expected 47, got 44.]
+js-bson: Failed to load c++ bson extension, using pure JS version
+2016-01-18T05:03:26.380Z|GET|/api/v1/logout|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:03:26.383Z|POST|/api/v1/login|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:03:26.390Z|POST|/api/v1/users|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:03:26.391Z|POST|/api/v1/users/:id|{
+  "isLoginRequired": true,
+  "actions": null
+}
+2016-01-18T05:03:26.392Z|GET|/api/v1/users|{
+  "isLoginRequired": true,
+  "actions": [
+    "me"
+  ]
+}
+2016-01-18T05:03:26.393Z|POST|/api/v1/users/:id/foos|{
+  "isLoginRequired": true,
+  "actions": null
+}
+2016-01-18T05:03:26.394Z|GET|/api/v1/foos/:id|{
+  "isLoginRequired": true,
+  "actions": null
+}
+2016-01-18T05:03:26.394Z|GET|/api/v1/users/:id/foos|{
+  "isLoginRequired": true,
+  "actions": null
+}
+2016-01-18T05:03:26.396Z|POST|/api/v1/users/:id/bazs|{
+  "isLoginRequired": true,
+  "actions": null
+}
+2016-01-18T05:03:26.397Z|GET|/api/v1/dev/clearData|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:03:26.399Z|RESTBERRY|5115
+events.js:142
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: failed to connect to [localhost:27017]
+    at null.<anonymous> (/Users/z/work/thingtosell/eval/restberry/test/passport-local-express-mongoose/node_modules/mongodb/lib/mongodb/connection/server.js:556:25)
+    at emitThree (events.js:98:13)
+    at emit (events.js:176:7)
+    at null.<anonymous> (/Users/z/work/thingtosell/eval/restberry/test/passport-local-express-mongoose/node_modules/mongodb/lib/mongodb/connection/connection_pool.js:156:15)
+    at emitTwo (events.js:88:13)
+    at emit (events.js:173:7)
+    at Socket.<anonymous> (/Users/z/work/thingtosell/eval/restberry/test/passport-local-express-mongoose/node_modules/mongodb/lib/mongodb/connection/connection.js:534:10)
+    at emitOne (events.js:78:13)
+    at Socket.emit (events.js:170:7)
+    at emitErrorNT (net.js:1257:8)
+    at nextTickCallbackWith2Args (node.js:455:9)
+    at process._tickCallback (node.js:369:17)
+error: Forever detected script exited with code: 1

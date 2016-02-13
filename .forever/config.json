@@ -1,0 +1,17 @@
+{
+  "root": "/Users/z/.forever",
+  "pidPath": "/Users/z/.forever/pids",
+  "sockPath": "/Users/z/.forever/sock",
+  "loglength": 100,
+  "logstream": false,
+  "columns": [
+    "uid",
+    "command",
+    "script",
+    "forever",
+    "pid",
+    "id",
+    "logfile",
+    "uptime"
+  ]
+}

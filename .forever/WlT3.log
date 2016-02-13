@@ -1,0 +1,58 @@
+{ [Error: Cannot find module '../build/Release/bson'] code: 'MODULE_NOT_FOUND' }
+js-bson: Failed to load c++ bson extension, using pure JS version
+WARN: using default ODM (mongoose)
+WARN: using default WAF (express)
+2016-01-18T05:06:53.007Z|DELETE|/api/v1/bars/:id|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:06:53.009Z|POST|/api/v1/bars|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:06:53.010Z|POST|/api/v1/bars/:id|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:06:53.010Z|GET|/api/v1/bars/:id|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:06:53.010Z|GET|/api/v1/bars|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:06:53.011Z|PUT|/api/v1/bars/:id|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:06:53.013Z|POST|/api/v1/bars/:id/foos|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:06:53.013Z|GET|/api/v1/foos/:id|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:06:53.014Z|GET|/api/v1/bars/:id/foos|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:06:53.015Z|POST|/api/v1/bazs|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:06:53.016Z|POST|/api/v1/bazs/:id|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:06:53.016Z|GET|/api/v1/bazs/:id|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:06:53.017Z|GET|/api/v1/dev/clearData|{
+  "isLoginRequired": false,
+  "actions": null
+}
+2016-01-18T05:06:53.019Z|RESTBERRY|6000
+error: Forever detected script was killed by signal: SIGKILL

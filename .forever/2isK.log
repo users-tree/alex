@@ -1,0 +1,5 @@
+IBMIoTF.DeviceClient initialized for organization : eo2z7p
+Connecting to IoTF with host : wss://eo2z7p.messaging.internetofthings.ibmcloud.com:8883
+Publishing to topic : iot-2/evt/telemetry/fmt/json with payload : {"lat":37.7484,"log":-122.4156}
+Publishing to topic : iot-2/evt/telemetry/fmt/json with payload : {"lat":37.7484,"log":-122.4156}
+Publishing to topic : iot-2/evt/telemetry/fmt/json with payload : {"lat":37.7484,"log":-122.4156}

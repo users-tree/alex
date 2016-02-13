@@ -1,0 +1,4 @@
+FILE=dotfiles-`whoami`.tgz
+(cd ~;tar zcf ~/src/$FILE .aws .bash* .gnu* .s3* .vimrc .gnupg .chef .passwd-s3fs .ssh .env .modulus)
+(cd ~/src;~/bin/enc $FILE)
+( mv ~/src/$FILE /Volumes/ALEX2006HW/src )

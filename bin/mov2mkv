@@ -1,0 +1,5 @@
+FILE=test
+[ $1 ] && FILE=$1
+
+# mkv to x264
+ffmpeg -i $FILE.mov -vcodec ffv1 -acodec pcm_s16le $FILE.mkv

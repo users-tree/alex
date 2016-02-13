@@ -1,0 +1,6 @@
+FILE=test
+[ $1 ] && FILE=$1
+
+# mp4
+ffmpeg -i $FILE.mov -acodec aac -strict experimental -ac 2 -ab 128k -vcodec libx264 -preset slow -f mp4 -crf 22 -s 640x360 $FILE.mp4
+

@@ -1,0 +1,6 @@
+echo -n "DMG file to convert : "
+read DMG
+echo $DMG
+if [ -f $DMG.dmg ]; then
+   hdiutil convert $DMG.dmg -format UDTO -o $DMG.iso
+fi

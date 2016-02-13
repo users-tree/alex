@@ -1,0 +1,5 @@
+[{release,"Erlang/OTP","18","7.2.1",
+          [{kernel,"4.1.1","/Users/z/.kerl/builds/otp-18.2.1/release_18.2.1/lib/kernel-4.1.1"},
+           {stdlib,"2.7","/Users/z/.kerl/builds/otp-18.2.1/release_18.2.1/lib/stdlib-2.7"},
+           {sasl,"2.6.1","/Users/z/.kerl/builds/otp-18.2.1/release_18.2.1/lib/sasl-2.6.1"}],
+          permanent}].

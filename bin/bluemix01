@@ -1,0 +1,2 @@
+#ssh root@bluemix01.pointlook.com
+ssh admin@bluemix01.pointlook.com

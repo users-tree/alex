@@ -1,0 +1,19 @@
+Listening on 3009
+
+failed to locate view "index.ejs", tried:
+  - /Users/z/work/unity3d/fb.thingtosell.com/views/index.ejs
+  - /Users/z/work/unity3d/fb.thingtosell.com/views/index/index.ejs
+  - /Users/z/work/unity3d/fb.thingtosell.com/views/../index/index.ejs
+
+Error: failed to locate view "index.ejs"
+    at Function.exports.compile (/Users/z/work/unity3d/fb.thingtosell.com/node_modules/express/lib/view.js:58:15)
+    at ServerResponse.res._render (/Users/z/work/unity3d/fb.thingtosell.com/node_modules/express/lib/view.js:414:18)
+    at ServerResponse.res.render (/Users/z/work/unity3d/fb.thingtosell.com/node_modules/express/lib/view.js:315:17)
+    at /Users/z/work/unity3d/fb.thingtosell.com/server.js:50:11
+    at me (/Users/z/work/unity3d/fb.thingtosell.com/node_modules/faceplate/index.js:114:7)
+    at /Users/z/work/unity3d/fb.thingtosell.com/server.js:49:18
+    at /Users/z/work/unity3d/fb.thingtosell.com/node_modules/faceplate/index.js:104:7
+    at EventEmitter.<anonymous> (/Users/z/work/unity3d/fb.thingtosell.com/node_modules/faceplate/index.js:131:11)
+    at emitTwo (events.js:88:13)
+    at EventEmitter.emit (events.js:173:7)
+::1 - - [Sun, 10 Jan 2016 16:33:36 GMT] "POST / HTTP/1.1" 500 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36"

@@ -1,0 +1,3 @@
+APP=$(which genghisapp)
+[ ! -f $APP ] && gem install genghisapp
+genghisapp --kill && genghisapp

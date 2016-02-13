@@ -1,0 +1,10 @@
+LENGTH=32
+
+[ ! -z  "$1" ] && LENGTH=$1
+
+
+SIMPLE=$(LC_CTYPE=C base64 /dev/urandom | tr -dc [:alnum:] | dd bs=$LENGTH count=1 2> /dev/null)
+SPECIAL=$(LC_CTYPE=C tr -dc [:alnum:][:punct:][:special:] < /dev/urandom | fold -w ${1:-$LENGTH} | head -n 1)
+
+echo "simple : $SIMPLE" 
+echo "special: $SPECIAL"

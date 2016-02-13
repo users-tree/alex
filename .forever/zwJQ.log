@@ -1,0 +1,16 @@
+undefined:1
+Quota exceeded
+^
+
+SyntaxError: Unexpected token Q
+    at Object.parse (native)
+    at Request._callback (/Users/z/work/iot/board01/iot/app.js:21:24)
+    at Request.self.callback (/Users/z/work/iot/board01/iot/node_modules/request/request.js:198:22)
+    at emitTwo (events.js:88:13)
+    at Request.emit (events.js:173:7)
+    at Request.<anonymous> (/Users/z/work/iot/board01/iot/node_modules/request/request.js:1035:10)
+    at emitOne (events.js:83:20)
+    at Request.emit (events.js:170:7)
+    at IncomingMessage.<anonymous> (/Users/z/work/iot/board01/iot/node_modules/request/request.js:962:12)
+    at emitNone (events.js:73:20)
+error: Forever detected script exited with code: 1

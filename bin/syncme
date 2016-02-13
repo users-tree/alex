@@ -1,0 +1,2 @@
+rsync -aW /Volumes/ALEX2006HW/ /Volumes/2TB-encryped/alex/ &
+rsync -aW /Users/z/work /Volumes/2TB-encryped/alex/ &

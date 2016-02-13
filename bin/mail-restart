@@ -1,0 +1,6 @@
+sudo service postfix restart
+sudo service spamassassin restart
+sudo service clamav-daemon restart
+sudo service amavis restart
+sudo service dovecot restart
+sudo service postgrey restart

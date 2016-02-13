@@ -1,0 +1,14 @@
+#!/bin/sh
+
+DATE=`date +%s`
+DISK=`drutil status | grep disk | awk -F/ '{ print $3 }'`
+if [[ ! -z "$DISK" ]]; then
+	echo "Found CD at $DISK."
+	echo "Unmounting $DISK."
+	diskutil unmountDisk $DISK
+	echo "Creating ISO from $DISK."
+	dd if=/dev/$DISK of=$DATE.iso
+else
+	echo "NO CD FOUND."
+	exit 1
+fi

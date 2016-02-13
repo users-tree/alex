@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>adzerk</groupId>
+  <artifactId>boot-cljs-repl</artifactId>
+  <version>0.3.0</version>
+  <name>boot-cljs-repl</name>
+  <description>Boot task to provide a ClojureScript REPL.</description>
+  <url>https://github.com/adzerk/boot-cljs-repl</url>
+  <licenses>
+    <license>
+      <url>http://www.eclipse.org/legal/epl-v10.html</url>
+      <name>EPL</name>
+      <comments/>
+    </license>
+  </licenses>
+  <scm>
+    <url>https://github.com/adzerk/boot-cljs-repl</url>
+    <tag>a260ae9208a26c4baba33b4b770ef987012b19dc</tag>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>boot</groupId>
+      <artifactId>core</artifactId>
+      <version>2.2.0</version>
+      <scope>provided</scope>
+      <exclusions/>
+    </dependency>
+    <dependency>
+      <groupId>adzerk</groupId>
+      <artifactId>bootlaces</artifactId>
+      <version>0.1.11</version>
+      <scope>test</scope>
+      <exclusions/>
+    </dependency>
+  </dependencies>
+</project>

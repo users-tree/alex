@@ -1,0 +1,13 @@
+#for DEST in r2qastage{0{1..9},{10..51}} r3qastage{0{1..9},{10..14}}
+#for DEST in r3qastage{0{1..9},{10..14}}
+#for DEST in r2qastage{0{1..9},{10..51}} 
+#for DEST in r2qastage{15..50} 
+#for DEST in r3qastage{0{1..9},{10..13}}
+for DEST in r2web{0{1..9},10} 
+do
+	echo $DEST
+#	ssh alexd@$DEST /usr/bin/sudo /etc/init.d/httpd stop &
+#	curl http://$DEST.razoo.com/br/version.txt
+#	ssh $DEST w
+#	curl http://$DEST.razoo.com/version.txt
+done

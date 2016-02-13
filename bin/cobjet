@@ -1,0 +1,2 @@
+ssh -i ~/.ssh/cobjet/cobjet-admin-aws-key.pem ubuntu@shell.cobjet.com
+#ssh devops@vpn.cobjet.com

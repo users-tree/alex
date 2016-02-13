@@ -1,0 +1,4 @@
+[ -z $1 ] && exit
+APP=$1
+
+ps -ef |grep $APP | grep -v grep | awk '{ print $2 }' | xargs kill -9
