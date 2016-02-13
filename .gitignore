@@ -69,6 +69,7 @@
 .vagrant.d/
 .wget-hsts
 .rnd
+.zsh_history
 Applications
 Desktop
 Documents
